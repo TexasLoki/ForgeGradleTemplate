@@ -5,3 +5,5 @@ eclipse/
 .nb-gradle/profiles/private/aux-config
 .nb-gradle-properties
 .project
+forgeBin-1.7.2-10.12.0.1025.src/
+javadocs/
