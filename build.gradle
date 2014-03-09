@@ -30,7 +30,7 @@ archivesBaseName = "modid"
 
 minecraft
 {
-    version = "1.7.2-10.12.0.1025"
+    version = "1.7.2-10.12.0.1039"
     assetDir = "eclipse/assets"
 }
 
@@ -59,26 +59,13 @@ processResources
     }
 }
 
-task runClient(type: JavaExec) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = "net.minecraft.launchwrapper.Launch"
-    args("--version", "1.6",
-        "--tweakClass", "cpw.mods.fml.common.launcher.FMLTweaker",
-        "--accessToken", "FML")
-    jvmArgs("-Xincgc",
-        "-Xmx1024M",
-        "-Xms1024M",
-        "-Djava.library.path=${project.buildDir}/natives",
-        "-Dfml.ignoreInvalidMinecraftCertificates=true")
-    workingDir("eclipse")
-}
-
 task debugClient(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = "net.minecraft.launchwrapper.Launch"
-    args("--version", "1.6",
+    args("--version", "1.7",
         "--tweakClass", "cpw.mods.fml.common.launcher.FMLTweaker",
-        "--accessToken", "FML")
+        "--accessToken", "FML",
+        "--username", "ForgeDevName")
     jvmArgs("-Xincgc",
         "-Xmx1024M",
         "-Xms1024M",
