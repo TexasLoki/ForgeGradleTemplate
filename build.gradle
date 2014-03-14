@@ -24,9 +24,11 @@ buildscript
 
 apply plugin: 'forge'
 
+modid   = "examplemod"
 version = "1.0"
-group = "com.yourname.modid"
-archivesBaseName = "modid"
+group   = "com.yourname.modid"
+
+archivesBaseName = modid
 
 minecraft
 {
@@ -49,7 +51,7 @@ processResources
         include 'mcmod.info'
                 
         // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version':project.version, 'mcversion':project.minecraft.version, 'modid':project.modid
     }
         
     // copy everything else, thats not the mcmod.info
