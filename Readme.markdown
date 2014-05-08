@@ -12,7 +12,7 @@ This branch ("*master*") is for *recommended* 1.7.2 Forge build 1060. Switch to 
 	Unlike the source package provided by Forge, this template does not include any eclipse files or project skeleton. You may try to generate one via gradle, but YMMV.
 
 ## Usage
-Simply open or "Import as Gradle Project" `build.gradle` using your IDE of choice. You can either run `gradle setupDevWorkspace` or go straight to `gradle build`.
+Simply open or "Import as Gradle Project" `build.gradle` using your IDE of choice. Run `gradle setupDevWorkspace` to setup a testing environment and then `gradle build` to build. To build straight from source without setting up a testing environment, just run `gradle build`.
 
 By default, built JAR files go to the `output` directory.
 
