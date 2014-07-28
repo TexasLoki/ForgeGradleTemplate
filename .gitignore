@@ -10,3 +10,4 @@
 /.nb-gradle-properties
 /.project
 *.iml
+*-javadoc/
