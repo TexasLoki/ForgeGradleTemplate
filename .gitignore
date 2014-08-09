@@ -11,3 +11,4 @@
 /.project
 *.iml
 *-javadoc/
+debug/
