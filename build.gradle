@@ -22,8 +22,8 @@ group   = "com.yourname.modid"
 
 minecraft
 {
-    version = "1.7.10-10.13.0.1180"
-    runDir = "debug"
+    version = "1.7.10-10.13.2.1291"
+    runDir  = "debug"
 }
 
 jar
@@ -33,7 +33,8 @@ jar
     destinationDir = file 'output'
 }
 
-dependencies {
+dependencies
+{
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
